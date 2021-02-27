@@ -1,0 +1,37 @@
+---
+Description: Set up an linux web server
+
+Resources: 
+  EC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-09d069a04349dc3cb
+      InstanceType: t2.micro
+      SecurityGroups: 
+      - !Ref WebserverSecurityGroup
+      Tags:
+      - Key: Name
+        Value: Linux apache Server
+      UserData:
+        'Fn::Base64': |
+          #!/bin/bash -x
+          
+          yum install -y httpd
+          cd /var/www/html
+          echo "<h1> Dharu's Server </h1>" index.html
+          service httpd start
+  
+  WebserverSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allows HTTP
+      SecurityGroupIngress: 
+      - CidrIp: 0.0.0.0/0
+        FromPort: 80
+        ToPort: 80
+        IpProtocol: tcp
+Outputs:
+  WebURL:
+    Description: The URL for the web page.
+    Value: !Sub 'http://${EC2Instance.PublicIp}'
+...

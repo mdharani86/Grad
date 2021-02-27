@@ -1,0 +1,42 @@
+---
+Description: Set up an Ubuntu apache2 web server
+
+Resources: 
+  EC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-07ebfd5b3428b6f4d
+      InstanceType: t2.micro
+      SecurityGroups: 
+      - !Ref WebserverSecurityGroup
+      Tags:
+      - Key: Name
+        Value: Ubuntu apache2 Server
+      UserData:
+        'Fn::Base64': |
+          #!/bin/bash -x
+          
+          #set timezone
+          timedatectl set-timezone America/New_York
+          
+          #install and set up apache
+          apt-get update 
+          apt-get install -y apache2
+          cd /var/www/html
+          echo "<h1> Dharu's Server </h1>" index.html
+        
+  
+  WebserverSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allows HTTP
+      SecurityGroupIngress: 
+      - CidrIp: 0.0.0.0/0
+        FromPort: 80
+        ToPort: 80
+        IpProtocol: tcp
+Outputs:
+  WebURL:
+    Description: The URL for the web page.
+    Value: !Sub 'http://${EC2Instance.PublicIp}'
+...

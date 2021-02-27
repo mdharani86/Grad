@@ -1,0 +1,18 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS dm_output (
+  `timestamp` string,
+  `filename` string,
+  `language_code` string,
+  `language` string,
+  `entity_title` string,
+  `sentiment` string,
+  `confidence_score` int
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
+WITH SERDEPROPERTIES (
+  'serialization.format' = '|',
+  'field.delim' = '|',
+  'collection.delim' = 'undefined',
+  'mapkey.delim' = 'undefined'
+-- The data from 's3://dharu-output-bucket/gradproj/' is converted into table. This s3 has read permission to public
+) LOCATION 's3://dharu-output-bucket/gradproj/'
+TBLPROPERTIES ('has_encrypted_data'='false');

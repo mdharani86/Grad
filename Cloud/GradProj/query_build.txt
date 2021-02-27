@@ -1,0 +1,8 @@
+SELECT timestamp,
+       filename,
+       language_code,
+       language,
+       entity_title,
+       sentiment,
+       confidence_score
+FROM dm_output;

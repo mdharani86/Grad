@@ -1,0 +1,20 @@
+{"restaurants": [{"keyword": "food", "name": "Garden Buffet", "city": "Las Vegas", "coordinates": {"latitude": 36.0114387078918, "longitude": -115.174912400544}, "review_count": 428, "rating": 2.5}]}
+{"restaurants": [{"keyword": "food", "name": "Red Robin Gourmet Burgers and Brews", "city": "Las Vegas", "coordinates": {"latitude": 36.1456449, "longitude": -115.3337199}, "review_count": 415, "rating": 2.5}]}
+{"restaurants": [{"keyword": "food", "name": "Red Robin Gourmet Burgers and Brews", "city": "Henderson", "coordinates": {"latitude": 36.0667426618399, "longitude": -115.041837209301}, "review_count": 411, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Calico Jack's Saloon", "city": "Las Vegas", "coordinates": {"latitude": 36.1596, "longitude": -115.27147}, "review_count": 61, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Sonrisa", "city": "Henderson", "coordinates": {"latitude": 36.0332697, "longitude": -115.0381415}, "review_count": 6, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "La Hacienda Nightclub", "city": "North Las Vegas", "coordinates": {"latitude": 36.196573, "longitude": -115.113726}, "review_count": 4, "rating": 2.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "Lucky's Bar", "city": "Las Vegas", "coordinates": {"latitude": 36.0990447998047, "longitude": -115.170448303223}, "review_count": 3, "rating": 2.5}]}
+{"restaurants": [{"keyword": "food", "name": "Steak \u2019n Shake", "city": "Kissimmee", "coordinates": {"latitude": 28.3044857708653, "longitude": -81.4557628333569}, "review_count": 182, "rating": 2.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "Applebee's Grill + Bar", "city": "Orlando", "coordinates": {"latitude": 28.5972055, "longitude": -81.210786}, "review_count": 89, "rating": 2.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "Applebee's Grill + Bar", "city": "Kissimmee", "coordinates": {"latitude": 28.344352, "longitude": -81.361087}, "review_count": 60, "rating": 1.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "ESPN Wide World of Sports Grill - Temporarily Unavailable", "city": "Kissimmee", "coordinates": {"latitude": 28.3380674079331, "longitude": -81.556367}, "review_count": 44, "rating": 2.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "Bombshell's Tavern", "city": "Orlando", "coordinates": {"latitude": 28.607058, "longitude": -81.410767}, "review_count": 15, "rating": 1.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Kook Sports Bar", "city": "Orlando", "coordinates": {"latitude": 28.376656, "longitude": -81.514156}, "review_count": 11, "rating": 2.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "The Green Bar", "city": "Casselberry", "coordinates": {"latitude": 28.65481, "longitude": -81.33149}, "review_count": 11, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Zebras Sports Bar", "city": "Orlando", "coordinates": {"latitude": 28.43277, "longitude": -81.47308}, "review_count": 7, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Route 65", "city": "Orlando", "coordinates": {"latitude": 28.455714663847, "longitude": -81.4714467395728}, "review_count": 5, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Chili's", "city": "Orlando", "coordinates": {"latitude": 28.601719, "longitude": -81.20049}, "review_count": 5, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "The Dubliner Irish Social House", "city": "Orlando", "coordinates": {"latitude": 28.5406246185303, "longitude": -81.3798904418945}, "review_count": 3, "rating": 2.5}]}
+{"restaurants": [{"keyword": "drinks", "name": "Pounder's Chicken Ranch", "city": "Orlando", "coordinates": {"latitude": 28.59632, "longitude": -81.243499}, "review_count": 2, "rating": 1.0}]}
+{"restaurants": [{"keyword": "drinks", "name": "Knight's Pub", "city": "Orlando", "coordinates": {"latitude": 28.5962372, "longitude": -81.208367}, "review_count": 2, "rating": 1.0}]}

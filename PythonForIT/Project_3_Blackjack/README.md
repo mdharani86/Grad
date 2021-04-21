@@ -1,2 +1,2 @@
-![](images/req1.png)
-![](images/req2.png)
+![](images/req1.PNG)
+![](images/req2.PNG)

@@ -1,3 +1,3 @@
 The details and flow of the project in the following link:
 
-Endpoint : http://dharu-proj-webpage.s3-website-us-east-1.amazonaws.com
+Endpoint : https://dharu-proj-webpage.s3.amazonaws.com/index.html

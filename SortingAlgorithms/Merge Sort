@@ -1,0 +1,40 @@
+def mergeSort(nums):
+    n = len(nums)
+    if n<=1:
+        return nums
+        
+    mid = n//2
+    
+    left = mergeSort(nums[:mid])
+    right = mergeSort(nums[mid:])
+    
+    return merge(left,right)
+    
+def merge(left,right):
+    srted = []
+    i ,j= 0,0
+    while i<len(left) and j<len(right):
+        if left[i] <= right[j]:
+            srted.append(left[i])
+            i+=1
+        elif left[i] > right[j]:
+            srted.append(right[j])
+            j+=1
+            
+    while i<len(left):
+        srted.append(left[i])
+        i+=1
+    while j<len(right):
+        srted.append(right[j])  
+        j+=1
+    
+    return srted
+    
+unsorted = [4,5,1,5,2,8,3,10,3]
+print(mergeSort(unsorted))
+
+# Time complexity: divide step: O(log n)
+#                   Merge step: Merging two sorted arrays of size n/2 each takes O(n) time because each element of the input arrays needs to be processed once.
+# Total time complexity: O(n.log n)
+
+# Space Complexity: O(n)

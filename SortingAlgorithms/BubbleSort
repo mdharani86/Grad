@@ -10,3 +10,7 @@ def bubbleSort(nums):
     return nums
 nums = [4,6,9,2,1,3]
 print(bubbleSort(nums))
+
+
+# Time Complexity : O(n^2)
+# Space complexity : O(1)

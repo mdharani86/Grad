@@ -11,3 +11,9 @@ def insertionSort(nums):
     return nums
     
 print(insertionSort([1,2,5,3,4]))
+
+
+# Time complexity: 
+    # worst-case : O(n^2)
+    # best-case: O(n)
+# space Complexity : O(1)

@@ -1,0 +1,20 @@
+def quickSort(nums):
+    if len(nums)<=1:
+        return nums
+        
+    pivot = nums[len(nums)//2]
+    left = [num for num in nums if num<pivot]
+    middle = [num for num in nums if num == pivot]
+    right = [num for num in nums if num > pivot]
+    
+    return quickSort(left) + middle + quickSort(right)
+
+    
+unsorted = [4,5,1,5,2,8,3,10,3]
+print(quickSort(unsorted))
+
+# Time complexity: average case: O(n.log n)
+#               worst case (when we choose smallest or larget element as pivot each time:)  O(n^2)
+
+# Space Complexity: Avg case: O(log n)
+#                   worst case: O(n)
